@@ -1,0 +1,31 @@
+.message-block {
+  background: white;
+  border-radius: 5px;
+  height: auto;
+  padding: 10px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.58);
+  box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.58);
+}
+
+.message-block > h4 {
+  float: left;
+  width: 90%;
+}
+
+.message-block > span {
+  margin-left: 20px;
+  color: #BDBDBD;
+}
+
+.message-block > p {
+  width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 18px;
+  font-size: 18px;
+}
