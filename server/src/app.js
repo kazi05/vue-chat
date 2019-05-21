@@ -6,16 +6,12 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/vue-chat')
     .then(() => console.log('MongoDB has started ...'))
     .catch(e => console.log(e));
-const Message = require('./messageModel')
-
-app.get('/', (req, res, next) => {
-
-});
+const Message = require('./messageModel');
 
 app.patch('/clear', (req, res) => {
   Message.remove({}).then(resp => console.log('DB cleared!'))
   res.sendStatus(201)
-})
+});
 
 io.on('connection', function(socket) {
   console.log('User connected');
