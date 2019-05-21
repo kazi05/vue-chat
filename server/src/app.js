@@ -3,7 +3,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://kaziadmin:kuzu001dada@vue-chat-shard-00-00-gyzlw.mongodb.net:27017,vue-chat-shard-00-01-gyzlw.mongodb.net:27017,vue-chat-shard-00-02-gyzlw.mongodb.net:27017/test?ssl=true&replicaSet=Vue-Chat-shard-0&authSource=admin')
+mongoose.connect('mongodb://localhost:27017/vue-chat')
     .then(() => console.log('MongoDB has started ...'))
     .catch(e => console.log(e));
 const Message = require('./messageModel')
